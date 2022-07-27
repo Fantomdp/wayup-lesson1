@@ -14,10 +14,10 @@ let country = "Ukraine";
 let population = 1000000;
 let footStadion = true;
 
-console.log("Название города - ",`${city}`);
-console.log("В какой стране находится этот город - ",`${country}`);
-console.log("Численность населения - ",`${population}`,"человек");
-console.log("Есть ли футбольный стадион - ",`${footStadion}`);
+console.log("Название города - ", `${city}`);
+console.log("В какой стране находится этот город - ", `${country}`);
+console.log("Численность населения - ", `${population}`, "человек");
+console.log("Есть ли футбольный стадион - ", `${footStadion}`);
 
 /* 
     Задание 2:
@@ -33,11 +33,11 @@ console.log("***Задача 2***");
 const sizeHeight = 40;
 const sizeWight = 70;
 
-resSquare = sizeHeight * sizeWight;
+let resSquare = sizeHeight * sizeWight;
 
-console.log("Высота = ",`${sizeHeight}`,"см.");
-console.log("Ширина = ",`${sizeWight}`,"см.");
-console.log("Площадь прямоугольника = ",`${resSquare}`,"кв.см.");
+console.log("Высота = ", `${sizeHeight}`, "см.");
+console.log("Ширина = ", `${sizeWight}`, "см.");
+console.log("Площадь прямоугольника = ", `${resSquare}`, "кв.см.");
 
 /* 
     Задание 3:
@@ -55,15 +55,13 @@ console.log("Площадь прямоугольника = ",`${resSquare}`,"к�
 */
 console.log("***Задача 3***");
 
-const time = 2;
-const speedOfFirst = 95;
-const speedOfSecond = 114;
+let time = 2,
+    speedOfFirst = 95,
+    speedOfSecond = 114;
 
-let distanceOfFirst = speedOfFirst * time;
-let distanceOfSecond = speedOfSecond * time;
-let distance = distanceOfFirst + distanceOfSecond;
+let distance = time * (speedOfFirst + speedOfSecond);
 
-console.log("Расстояние между городами - ",`${distance}`,"км.");
+console.log("Расстояние между городами - ", `${distance}`, "км.");
 /* 
     Задание 4:
     
@@ -99,15 +97,15 @@ console.log("***Задача 5***");
 const randomNumber2 = Math.floor(Math.random() * 100);
 console.log(randomNumber2);
 
-switch(true) {
-    case (randomNumber2 < 20) :
+switch (true) {
+    case (randomNumber2 < 20):
         console.log("randomNumber2 меньше 20");
-        break; 
-    case (randomNumber2 > 50) :
+        break;
+    case (randomNumber2 > 50):
         console.log("randomNumber2 больше 50");
         break;
-    default :
-        console.log("randomNumber2 больше 20, и меньше 50");  
+    default:
+        console.log("randomNumber2 больше 20, и меньше 50");
 }
 
 
